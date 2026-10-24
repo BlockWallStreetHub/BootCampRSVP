@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Boot Camp Part 2 RSVP | Block Wall Street</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#04070F;--navy2:#0B1224;--navy3:#121B33;--gold:#D4A843;--gold2:#F0CC74;--text:#E8ECF5;--muted:#8F9BB5;--line:rgba(212,168,67,.25)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--navy);color:var(--text);font-family:'Barlow',sans-serif;line-height:1.55;background-image:radial-gradient(900px 400px at 50% -100px,rgba(212,168,67,.12),transparent)}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px}
+header{padding:22px 0;border-bottom:1px solid var(--line)}
+.brand{font-family:'Bebas Neue';letter-spacing:.2em;font-size:22px;color:var(--gold)}
+.hero{padding:56px 0 28px;text-align:center}
+.tag{font-family:'DM Mono';font-size:12px;letter-spacing:.18em;color:var(--gold);text-transform:uppercase}
+h1{font-family:'Bebas Neue';font-size:clamp(46px,9vw,84px);line-height:.95;margin:14px 0 16px;font-weight:400}
+h1 em{font-style:normal;color:var(--gold)}
+.lead{color:var(--muted);font-size:18px;max-width:560px;margin:0 auto}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:34px 0}
+.stat{background:var(--navy2);border:1px solid var(--line);border-radius:12px;padding:16px;text-align:center}
+.stat small{display:block;font-family:'DM Mono';font-size:10.5px;letter-spacing:.14em;color:var(--muted);text-transform:uppercase}
+.stat b{font-family:'Bebas Neue';font-size:30px;font-weight:400;color:var(--gold2);letter-spacing:.03em}
+.stat s{color:var(--muted);font-size:16px}
+.card{background:var(--navy2);border:1px solid var(--line);border-radius:16px;padding:28px;margin-bottom:28px}
+.card h2{font-family:'Bebas Neue';font-weight:400;font-size:34px;letter-spacing:.04em;margin-bottom:6px}
+.note{background:rgba(212,168,67,.08);border:1px solid var(--line);border-radius:10px;padding:14px 16px;font-size:15px;margin-bottom:22px}
+label{display:block;font-family:'DM Mono';font-size:11.5px;letter-spacing:.14em;color:var(--muted);text-transform:uppercase;margin:16px 0 6px}
+input,select,textarea{width:100%;background:var(--navy);border:1px solid #26314f;border-radius:9px;color:var(--text);padding:13px 14px;font:inherit;font-size:16px}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--gold)}
+button{margin-top:24px;width:100%;background:linear-gradient(135deg,var(--gold2),var(--gold));color:#1a1405;border:0;border-radius:10px;padding:16px;font-family:'Bebas Neue';font-size:24px;letter-spacing:.08em;cursor:pointer}
+button:hover{filter:brightness(1.07)}
+.fine{text-align:center;color:var(--muted);font-size:13.5px;margin-top:14px}
+footer{text-align:center;padding:30px 0 50px;color:var(--muted);font-family:'DM Mono';font-size:11.5px;letter-spacing:.16em}
+@media(max-width:560px){.stats{grid-template-columns:1fr}.card{padding:20px}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><div class="brand">BLOCK WALL STREET</div></div></header>
+
+<main class="wrap">
+  <section class="hero">
+    <div class="tag">Boot Camp Part 2 &middot; Participants Only</div>
+    <h1>Keep going. <em>Continue</em> the boot camp.</h1>
+    <p class="lead">You finished Part 1. This RSVP is only for Part 1 participants, and your discount is already built in.</p>
+  </section>
+
+  <section class="stats">
+    <div class="stat"><small>Regular price</small><b><s>$650</s></b></div>
+    <div class="stat"><small>Part 1 participant price</small><b>$600</b></div>
+    <div class="stat"><small>Pay by Chime / crypto</small><b>$570 / $540</b></div>
+  </section>
+
+  <section class="card" style="text-align:center">
+    <div class="tag">New class schedule</div>
+    <h2>Mondays &amp; Wednesdays &middot; 8:00 PM Central</h2>
+    <p style="color:var(--muted);margin-top:6px">The days have changed for Part 2. Classes now meet Monday and Wednesday nights at 8 PM Central.</p>
+  </section>
+
+  <section class="card">
+    <div class="tag">Reserve your seat</div>
+    <h2>RSVP for Part 2</h2>
+    <div class="note">After you RSVP, you will go straight to the payment page. Pay by card at $600, Chime for 5% off ($570), or crypto for 10% off ($540).</div>
+
+    <form action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="cbde23f6-f617-4b16-953f-7b0aab0e9f58">
+      <input type="hidden" name="subject" value="New Boot Camp Part 2 RSVP">
+      <input type="hidden" name="from_name" value="Block Wall Street Boot Camp Part 2">
+      <input type="hidden" name="redirect" value="https://amirshub444.github.io/BlockWallStreetBootCamp/payment.html">
+      <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+
+      <label for="name">Full name</label>
+      <input id="name" name="name" type="text" required autocomplete="name">
+
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required autocomplete="email">
+
+      <label for="phone">Phone (optional)</label>
+      <input id="phone" name="phone" type="tel" autocomplete="tel">
+
+      <label for="attend">How will you attend?</label>
+      <select id="attend" name="attendance" required>
+        <option value="">Choose one</option>
+        <option>In person (Chicago)</option>
+        <option>Online</option>
+        <option>Either, I will decide later</option>
+      </select>
+
+      <label for="sched">Can you make Mondays &amp; Wednesdays at 8 PM Central?</label>
+      <select id="sched" name="schedule_ok" required>
+        <option value="">Choose one</option>
+        <option>Yes, both nights</option>
+        <option>Most nights, I will watch the recordings for the rest</option>
+        <option>Need to talk about the schedule</option>
+      </select>
+
+      <label for="method">Planned payment method</label>
+      <select id="method" name="payment_method" required>
+        <option value="">Choose one</option>
+        <option>Card $600</option>
+        <option>Chime $570 (5% off)</option>
+        <option>Crypto $540 (10% off)</option>
+      </select>
+
+      <label for="msg">Anything you want me to know? (optional)</label>
+      <textarea id="msg" name="message" rows="3"></textarea>
+
+      <button type="submit">RSVP and go to payment &rarr;</button>
+      <p class="fine">Your RSVP goes straight to Block Wall Street. Your seat locks in when you pay.</p>
+    </form>
+  </section>
+</main>
+
+<footer>THE BITCOIN ARMY BUILDS.</footer>
+</body>
+</html>
